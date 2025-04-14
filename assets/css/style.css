@@ -16,7 +16,7 @@
             box-sizing: border-box;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
-        
+        #42445A
         body {
             background-color: var(--background);
             color: var(--text);
@@ -318,7 +318,8 @@
        }
         
         @media (prefers-color-scheme: dark) {
-           .feature-icon .custom-icon {
+           .feature-icon .custom-icon
+           .search-icon img {
            filter: brightness(0) invert(1);
           }
         }
@@ -486,12 +487,18 @@
         }
         
         .search-icon {
-            position: absolute;
-            left: 15px;
-            top: 50%;
-            transform: translateY(-50%);
-            color: var(--text-secondary);
+              position: absolute;
+              left: 15px;
+              top: 50%;
+              transform: translateY(-50%);
         }
+
+            .search-icon img {
+              width: 18px;
+              height: 18px;
+              object-fit: contain;
+              filter: invert(0);
+            }
         
         .commands-tabs {
             display: flex;
