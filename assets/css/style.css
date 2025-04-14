@@ -1,5 +1,4 @@
 :root {
-    /* Tema claro (default) */
     --primary: #6200ea;
     --secondary: #03dac6;
     --background: #f5f5f5;
@@ -10,7 +9,6 @@
     --success: #00e676;
 }
 
-/* Tema oscuro */
 [data-theme="dark"] {
     --primary: #bb86fc;
     --secondary: #03dac6;
@@ -91,16 +89,38 @@ body {
     padding: 0 20px;
 }
 
-/* Para pantallas grandes */
 @media (min-width: 1440px) {
     .container {
-        max-width: 1400px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+    body {
+        font-size: 16px;
+    }
+    
+    h2 {
+        font-size: 2rem;
+    }
+    
+    .logo {
+        font-size: 3rem;
+    }
+    
+    .description {
+        max-width: 700px;
     }
 }
 
 @media (min-width: 1920px) {
     .container {
-        max-width: 1800px;
+        max-width: 1400px;
+    }
+    
+    .features-grid, .version-grid, .command-list, .team-grid {
+        grid-template-columns: repeat(4, 1fr);
+        max-width: 1400px;
+        margin: 0 auto;
     }
 }
 
@@ -309,7 +329,6 @@ h2::after {
     gap: 30px;
 }
 
-
 @media (min-width: 1440px) {
     .features-grid {
         grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
@@ -329,6 +348,7 @@ h2::after {
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
 }
 
 .feature-card:hover {
@@ -364,11 +384,11 @@ h2::after {
     width: 40px;
     height: 40px;
     object-fit: contain;
-    filter: brightness(0) saturate(100%) invert(var(--icon-invert, 0));
+    filter: brightness(0) saturate(100%);
 }
 
 [data-theme="dark"] .feature-icon .custom-icon {
-    --icon-invert: 1;
+    filter: brightness(0) saturate(100%) invert(1);
 }
 
 .feature-title {
@@ -379,6 +399,8 @@ h2::after {
 
 .feature-description {
     color: var(--text-secondary);
+    line-height: 1.6;
+    font-size: clamp(0.95rem, 1vw, 1.1rem);
 }
 
 .stats-container {
@@ -397,9 +419,9 @@ h2::after {
     min-width: 200px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     flex: 1 1 calc(50% - 20px);
+    max-width: 100%;
 }
 
-/* Para pantallas grandes */
 @media (min-width: 1440px) {
     .stat-card {
         flex: 1 1 calc(25% - 20px);
@@ -428,7 +450,6 @@ h2::after {
     margin-top: 30px;
 }
 
-/* Para pantallas grandes */
 @media (min-width: 1440px) {
     .version-grid {
         grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
@@ -449,6 +470,7 @@ h2::after {
     position: relative;
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
 }
 
 .version-card::before {
@@ -519,6 +541,7 @@ h2::after {
     padding: 30px;
     margin-top: 40px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
 }
 
 .commands-header {
@@ -561,11 +584,11 @@ h2::after {
     width: 18px;
     height: 18px;
     object-fit: contain;
-    filter: invert(var(--icon-invert, 0));
+    filter: brightness(0) saturate(100%);
 }
 
 [data-theme="dark"] .search-icon img {
-    --icon-invert: 1;
+    filter: brightness(0) saturate(100%) invert(1);
 }
 
 .commands-tabs {
@@ -594,7 +617,6 @@ h2::after {
     gap: 20px;
 }
 
-/* Para pantallas grandes */
 @media (min-width: 1440px) {
     .command-list {
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -629,6 +651,7 @@ h2::after {
     font-size: 0.9rem;
     color: var(--text-secondary);
     margin-bottom: 10px;
+    line-height: 1.6;
 }
 
 .command-usage {
@@ -657,6 +680,7 @@ h2::after {
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
 }
 
 .faq-question {
@@ -794,6 +818,8 @@ h2::after {
     font-style: italic;
     position: relative;
     padding-left: 30px;
+    line-height: 1.6;
+    font-size: clamp(0.95rem, 1vw, 1.1rem);
 }
 
 .testimonial-content::before {
@@ -887,7 +913,6 @@ h2::after {
     margin-top: 30px;
 }
 
-/* Para pantallas grandes */
 @media (min-width: 1440px) {
     .team-grid {
         grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -907,6 +932,7 @@ h2::after {
     text-align: center;
     transition: transform 0.3s ease;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
 }
 
 .team-member:hover {
@@ -951,6 +977,7 @@ h2::after {
     border-radius: 10px;
     padding: 30px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
 }
 
 .contact-item {
@@ -989,6 +1016,7 @@ h2::after {
     border-radius: 10px;
     padding: 30px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
 }
 
 .form-group {
