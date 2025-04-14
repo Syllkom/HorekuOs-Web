@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HorekuOs - Bot Oficial</title>
+    <link rel="stylesheet" href="./assets/css/style.css"/>
+    
+    <meta property="og:title" content="HorekuOs | Syllkom ">
+    <meta property="og:description" content="WhatsApp simple bot">
+    <meta property="og:image" content="https://HorekuOs.netlify.app//assets/HorekuOs.png">
+  
+     <link rel="icon" href="./assets/icons/HorekuOs.ico" type="image/x-icon">
+</head>
+<body>
+    <nav>
+        <div class="container nav-container">
+            <div class="nav-logo">HorekuOs</div>
+            <ul class="nav-links">
+                <li><a href="#features">Características</a></li>
+                <li><a href="#versions">Versiones</a></li>
+                <li><a href="#commands">Comandos</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#roadmap">Roadmap</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle">🌙</button>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="container">
+            <h1 class="logo">HorekuOs</h1>
+            <p class="tagline">El bot de WhatsApp más avanzado para tu grupo</p>
+            <p class="description">HorekuOs es un bot multifuncional diseñado para mejorar tu experiencia en WhatsApp con comandos de moderación, descargas, juegos, utilidades y mucho más.</p>
+            <div class="cta-buttons">
+                <a href="#" class="primary-btn">Añadir a WhatsApp</a>
+                <a href="#commands" class="secondary-btn">Ver Comandos</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="fade-in-up">
+        <div class="container">
+            <div class="section-header">
+                <h2>Características</h2>
+                <p class="section-subtitle">Descubre todo lo que HorekuOs puede hacer por tu grupo</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    
+                     <div class="feature-icon">
+                      <img src="./assets/icons/escudo.png" alt="Moderación" class="custom-icon">
+                    </div>
+                    <h3 class="feature-title">Moderación Avanzada</h3>
+                    <p class="feature-description">Sistema completo para mantener tu grupo seguro con comandos de gestión de usuarios, filtros de contenido y más.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                     <img src="./assets/icons/game.png" alt="Game" class="custom-icon">
+                    </div>
+                    <h3 class="feature-title">Mini-juegos</h3>
+                    <p class="feature-description">Mantén a tu comunidad entretenido con una variedad de mini-juegos interactivos directamente en tu grupo.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                     <img src="./assets/icons/sett.png" alt="settings" class="custom-icon">
+                    </div>
+                    <h3 class="feature-title">Personalización</h3>
+                    <p class="feature-description">Adapta HorekuOs a las necesidades de tu grupo con numerosas opciones de configuración.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                     <img src="./assets/icons/estad.png" alt="Estadísticas" class="custom-icon">
+                    </div>
+                    <h3 class="feature-title">Estadísticas</h3>
+                    <p class="feature-description">Monitorea la actividad de tu grupo con completos sistemas de estadísticas y análisis.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                     <img src="./assets/icons/meta.png" alt="Moderación" class="custom-icon">
+                    </div>
+                    <h3 class="feature-title">Inteligencia Artificial</h3>
+                    <p class="feature-description">HorekuOs, esta integrado con LlamaAI de Meta AI p, este puede ser usado en grupos y chats privados, este actuará como otra persona más.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="fade-in-up">
+        <div class="container">
+            <div class="stats-container">
+                <div class="stat-card">
+                    <div class="stat-number" id="userCount">5k+</div>
+                    <div class="stat-label">Usuarios</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="commandCount">200+</div>
+                    <div class="stat-label">Comandos</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="uptime">99.9%</div>
+                    <div class="stat-label">Tiempo activo</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="versions" class="fade-in-up">
+        <div class="container">
+            <div class="section-header">
+                <h2>Versiones</h2>
+                <p class="section-subtitle">Siempre en constante evolución para ofrecerte lo mejor</p>
+            </div>
+            <div class="version-grid">
+                <div class="version-card">
+                    <h3 class="version-name">HorekuOs v3.0.1</h3>
+                    <p class="version-date">Abril 2025</p>
+                    <p>Última versión estable con importantes mejoras de rendimiento, parches y nuevas funcionalidades.</p>
+                    <div class="version-features">
+                        <div class="feature">Sistema de descarga actualizado</div>
+                        <div class="feature">Nuevos mini-juegos</div>
+                        <div class="feature">Menu mejorado</div>
+                    </div>
+                    <a href="#" class="download-btn">Descargar</a>
+                </div>
+                <div class="version-card">
+                    <h3 class="version-name">HorekuOs v3.0.0</h3>
+                    <p class="version-date">Marzo 2025</p>
+                    <p>Versión con rediseño completo de la arquitectura interna para mayor estabilidad.</p>
+                    <div class="version-features">
+                        <div class="feature">Nueva estructura de comandos</div
+                        <div class="feature">Comandos de administración</div>
+                        <div class="feature">Optimización de recursos</div>
+                    </div>
+                    <a href="#" class="download-btn">Descargar</a>
+                </div>
+                <div class="version-card">
+                    <h3 class="version-name">HorekuOs v2.5.0 (beta)</h3>
+                    <p class="version-date">Enero 2024</p>
+                    <p>Versión con de prueba y optimización en la estructura.</p>
+                    <div class="version-features">
+                        <div class="feature">Sistema de perfiles personalizados</div>
+                        <div class="feature">Economía y tienda virtual</div>
+                        <div class="feature">Comandos de interacción social</div>
+                        <div class="feature">Nuevos comandos de admiración</div>
+                        <div class="feature">Comandos de descarga</div>
+                        <div class="feature">Comandos Stutype</div>
+                        <div class="feature">Sistema RPG</div>
+                        <div class="feature">Conexión por QR y Código de 8 dígitoss</div>
+                    </div>
+                    <a href="#" class="download-btn">Descargar</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="commands" class="fade-in-up">
+        <div class="container">
+            <div class="section-header">
+                <h2>Comandos</h2>
+                <p class="section-subtitle">Explora los comandos disponibles en HorekuOs</p>
+            </div>
+            <div class="commands-container">
+                <div class="commands-header">
+                    <div class="search-container">
+                        <input type="text" class="search-input" id="commandSearch" placeholder="Buscar comandos...">
+                        <span class="search-icon">🔍</span>
+                    </div>
+                </div>
+                <div class="commands-tabs">
+                    <div class="command-tab active" data-category="all">Todos</div>
+                    <div class="command-tab" data-category="main">Main</div>
+                    <div class="command-tab" data-category="servicio">Servicio</div>
+                    <div class="command-tab" data-category="gp">Grupos</div>
+                    <div class="command-tab" data-category="dl">Descargas</div>
+                    <div class="command-tab" data-category="search">Búsqueda</div>
+                    <div class="command-tab" data-category="rpg">RPG</div>
+                    <div class="command-tab" data-category="game">Juegos</div>
+                    <div class="command-tab" data-category="fun">Diversión</div>
+                    <div class="command-tab" data-category="anime">Anime</div>
+                </div>
+                <div class="command-list" id="commandList">
+
+                     <div class="command-item" data-category="main">
+                        <div class="command-name">Crear sub bot</div>
+                        <div class="command-description">Crea tu sub bot</div>
+                        <div class="command-usage">/subbot -create (new Bot)</div>
+                        <div class="command-usage">/subbot -delete slot-[id]</div>
+                        <div class="command-usage">/subbot -start slot-[id]</div>
+                        <div class="command-usage">/subbot -stop slot-[id]</div>
+                    </div>
+                     <div class="command-item" data-category="main">
+                        <div class="command-name">Bot</div>
+                        <div class="command-description">Hola, soy @HorekuOs, para ver la lista de comandos utiliza /menu, si desea interactuar con mi creador: /owner</div>
+                        <div class="command-usage">/bot</div>
+                    </div>
+                     <div class="command-item" data-category="main">
+                        <div class="command-name">Creadores</div>
+                        <div class="command-description">Obtén el vcard con todos los contactos de los creadores de HorekuOs.</div>
+                        <div class="command-usage">/creador</div>
+                    </div>
+                     <div class="command-item" data-category="main">
+                        <div class="command-name">Ping</div>
+                        <div class="command-description">Mensaje + velocidad de respuesta.</div>
+                        <div class="command-usage">/ping</div>
+                    </div>
+                     <div class="command-item" data-category="main">
+                        <div class="command-name">Script de HorekuOs</div>
+                        <div class="command-description">Obtén el enlace del repositorio de HorekuOs para descargar el script.</div>
+                        <div class="command-usage">/sc</div>
+                    </div>
+                    
+                    <div class="command-item" data-category="servicio">
+                        <div class="command-name">Llama AI</div>
+                        <div class="command-description">Utiliza la inteligencia artificial de Meta AI en grupos o chats privados.</div>
+                        <div class="command-usage">/ia [text]</div>
+                    </div>
+                    <div class="command-item" data-category="servicio">
+                        <div class="command-name">Remini</div>
+                        <div class="command-description">Mejora la calidad de tus imágenes a una mejor resolución.</div>
+                        <div class="command-usage">/hd [quoted image message]</div>
+                    </div>
+                    <div class="command-item" data-category="servicio">
+                        <div class="command-name">Imágen a URL</div>
+                        <div class="command-description">Convierte tus imágenes a un enlace directo usando CatBox mediante este comando.</div>
+                        <div class="command-usage">/tourl [quoted image message]</div>
+                    </div>
+                    <div class="command-item" data-category="servicio">
+                         <div class="command-name">Tiny URL</div>
+                         <div class="command-description">Convierte tus enlaces largos en unos cortos.</div>
+                         <div class="command-usage">/short [url]</div>
+                    </div>
+                    <div class="command-item" data-category="servicio">
+                         <div class="command-name">Traductor de Google</div>
+                         <div class="command-description">Traduce mensajes en idioma estranjero a tu idioma natal.</div>
+                         <div class="command-usage">tr es [text]</div>
+                    </div>
+                    <div class="command-item" data-category="servicio">
+                         <div class="command-name">Shazam - What music?</div>
+                         <div class="command-description">Reconoce el nombre de tu música mediante un pequeño fragmento del vídeo o audio de tu música.</div>
+                         <div class="command-usage">/whatmusic [quoted audio/video]</div>
+                    </div>
+                    <div class="command-item" data-category="servico">
+                          <div class="command-name">Wikipedia</div>
+                          <div class="command-description">Obtén información de Wikipedia mediante este comando.</div>
+                          <div class="command-usage">/wikipedia [text]</div>
+                    </div>
+                    <div class="command-item" data-category="servicio">
+                          <div class="command-name">Stickers</div>
+                          <div class="command-description">Convierte tus imágenes y vídeos en stickers.</div>
+                    </div>
+                    <div class="command-item" data-category="servicio">
+                          <div class="command-name">De texto a voz</div>
+                          <div class="command-description">Convierte tus textos a una voz femenina (robot).</div>
+                          <div class="command-usage">/voz [text]</div>
+                    </div>
+                    
+                    <div class="command-item" data-category="gp">
+                        <div class="command-name">Settings</div>
+                        <div class="command-description">Obtén una lista con todos los ajustes disponibles para su grupo.</div>
+                        <div class="command-usage">/settings [quoted message|opcion|true or false]</div>
+                    </div>
+                    <div class="command-item" data-category="gp">
+                        <div class="command-name">Promote</div>
+                        <div class="command-description">Promover a un usuario a administrador de grupo.</div>
+                        <div class="command-usage">/promote @user</div>
+                    </div>
+                    <div class="command-item" data-category="gp">
+                        <div class="command-name">Demote</div>
+                        <div class="command-description">Degradar a un administrador de grupo a rol usuario.</div>
+                        <div class="command-usage">/demote @adminitrador</div>
+                    </div>
+                    <div class="command-item" data-category="gp">
+                        <div class="command-name">Kick</div>
+                        <div class="command-description">Eliminar a un usuario de tu grupo.</div>
+                        <div class="command-usage">/kick @user or quoted [razón (opcional)]</div>
+                    </div>
+                    <div class="command-item" data-category="gp">
+                        <div class="command-name">Invocar</div>
+                        <div class="command-description">Invoca a los fantasmas de tu grupo.</div>
+                        <div class="command-usage">/invocar [message (opcional)]</div>
+                    </div>
+                    <div class="command-item" data-category="gp">
+                        <div class="command-name">Hidetag</div>
+                        <div class="command-description">Menciona a todos los integrantes de tu grupo con un mensaje, foto, video, audio o sticker.</div>
+                        <div class="command-usage">/hidetag [message]</messge></div>
+                    </div>
+                    <div class="command-item" data-category="gp">
+                        <div class="command-name">Información de grupo</div>
+                        <div class="command-description">Obtiene la información completa de tu grupo, contador de mensaje, cantidad de usuarios, países mas comunes en tu grupo, descripción de grupo, etc.</div>
+                        <div class="command-usage">/info g</div>
+                    </div>
+                    
+                    <div class="command-item" data-category="dl">
+                        <div class="command-name">Play</div>
+                        <div class="command-description">Introduce el nombre/título de tu música o vídeo para obtener la información y los formatos disponibles de descarga en el bot.</div>
+                        <div class="command-usage">/play [nombre o URL]</div>
+                    </div>
+                    <div class="command-item" data-category="dl">
+                        <div class="command-name">YouTube MP3</div>
+                        <div class="command-description">Descarga contenido en MP3 mediante un enlace de Youtube.</div>
+                        <div class="command-usage">/ytmp3 [url de la música]</div>
+                    </div>
+                    <div class="command-item" data-category="dl">
+                        <div class="command-name">YouTube MP4</div>
+                        <div class="command-description">Descarga contenido en MP4 mediante un enlace de YouTube.</div>
+                        <div class="command-usage">/ytmp4 [url del vídeo]</div>
+                    </div>
+                    <div class="command-item" data-category="dl">
+                        <div class="command-name">Spotify</div>
+                        <div class="command-description">Descarga la música que desees de Spotify mediante un enlace de Spotify.</div>
+                        <div class="command-usage">/sp [url de la música]</div>
+                    </div>
+                    <div class="command-item" data-category="dl">
+                        <div class="command-name">Tiktok MP3 y MP4</div>
+                        <div class="command-description">Descarga imágenes, videos sin marca de agua tanto como MP3 mediante enlaces de Tiktok, este ya te promocionará una opción para la descarga de audio en la descripción del vídeo.</div>
+                        <div class="command-usage">/tt [url del vídeo/iamgen/audio]</div>
+                    </div>
+                    <div class="command-item" data-category="dl">
+                        <div class="command-name">Titkok HD</div>
+                        <div class="command-description">Descarga videos de Titkok sin marca de agua en la máxima calidad del video publicado, el audio se enviarán junto al vídeo.</div>
+                        <div class="command-usage">/tthd [url del vídeo]</div>
+                    </div>
+                    <div class="command-item" data-category="dl">
+                        <div class="command-name">Facebook</div>
+                        <div class="command-description">Descarga videos de Facebook mediante un enlace de Facebook.</div>
+                        <div class="command-usage">/fb [url del vídeo]</div>
+                    </div>
+                    <div class="command-item" data-category="dl">
+                        <div class="command-name">Instagram</div>
+                        <div class="command-description">Descarga videos e imágenes de Instagram mediante el enlace de Instagram.</div>
+                        <div class="command-usage">/ig [url del vídeo]</div>
+                    </div>
+                    <div class="command-item" data-category="dl">
+                        <div class="command-name">Twitter (X)</div>
+                        <div class="command-description">Descarga videos de Twitter (X), mediante un enlace de Twitter (X}).</div>
+                        <div class="command-usage">/twt [url del vídeo]</div>
+                    </div>
+                    <div class="command-item" data-category="dl">
+                        <div class="command-name">MediaFire</div>
+                        <div class="command-description">Descarga archivos de MediaFire, el limite de envío es de 450MB, esto debido a las restricciones de Baileys :'3.</div>
+                        <div class="command-usage">/mdfire [url del archivo]</div>
+                    </div>
+                    <div class="command-item" data-category="dl">
+                        <div class="command-name">Mega</div>
+                        <div class="command-description">Descarga archivos de Mega mediante un enlace de Mega.</div>
+                        <div class="command-usage">/mega [url del archivo]</div>
+                    </div>
+                    <div class="command-item" data-category="dl">
+                        <div class="command-name">Google Drive</div>
+                        <div class="command-description">Descarga archivos de Google Drive mediante el enlace directo al archivo específico de Google Drive XD.</div>
+                        <div class="command-usage">/gdrive [url del archivo]</div>
+                    </div>
+                    <div class="command-item" data-category="dl">
+                        <div class="command-name">Aptoide (APK)</div>
+                        <div class="command-description">Busca aplicaciones en Aptoide mediante este comando, HorekuOs realizará la búsqueda y te enviará el archivo .apk.</div>
+                        <div class="command-usage">/aptoide [nombre de la aplicación]</div>
+                    </div>
+                    <div class="command-item" data-category="dl">
+                        <div class="command-name">GitHub Clone</div>
+                        <div class="command-description">Clona (descarga) repositorios de GitHub mediante este comando.</div>
+                        <div class="command-usage">/git [url del repositorio]</div>
+                    </div>
+                    <div class="command-item" data-category="dl">
+                        <div class="command-name">XNXX (+18)</div>
+                        <div class="command-description">Descarga contenido +18 de xnxx mediante el enlace de xnxx.</div>
+                        <div class="command-usage">/xnxxdl [url del vídeo +18]</div>
+                    </div>
+                    
+                    <div class="command-item" data-category="search">
+                        <div class="command-name">YouTube Search</div>
+                        <div class="command-description">Busca vídeos/musica en Youtube mediante este comando y copia el enlace para descargar el contenido en el formato deseado, cave aclarar que se usa una API para las descargas de YouTube, por lo que no siempre va a funcionar.</div>
+                        <div class="command-usage">/yts [nombre]</div>
+                    </div>
+                    <div class="command-item" data-category="search">
+                        <div class="command-name">XNXX Search</div>
+                        <div class="command-description">Busca videos +18 en xnxx.</div>
+                        <div class="command-usage">/xnxxs [nombre del vídeo +18]</div>
+                    </div>
+                    <div class="command-item" data-category="search">
+                        <div class="command-name">Google imagen</div>
+                        <div class="command-description">Busca imagenes de Google mediante este comando.</div>
+                        <div class="command-usage">/hangman</div>
+                    </div>
+                    <div class="command-item" data-category="search">
+                        <div class="command-name">Wallpaper</div>
+                        <div class="command-description">Busca fondos de pantalla para celulares o computadoras.</div>
+                        <div class="command-usage">/wallpaper [nombre del wallpaper]</div>
+                    </div>
+                    
+                    <div class="command-item" data-category="rpg">
+                        <div class="command-name">Registrar nuevo usuario</div>
+                        <div class="command-description">Regístrate en el sistema RPG de HorekuOs, consigo obtendrás grandes recompensas por regístrate en el sistema RPG de HorekuOs. Recuerda que al registrarte obtendrás tu código de serie.</div>
+                        <div class="command-usage">/reg [nombre y edad: Syllkom.16]</div>
+                    </div>
+                    <div class="command-item" data-category="rpg">
+                        <div class="command-name">Eliminar perfil</div>
+                        <div class="command-description">Elimina tu información de registro (perfil), piénsalo bien antes de usar este comando, ten en cuenta que se eliminará todo tu progreso sin la oportunidad de poder volver a recuperarlo.</div>
+                        <div class="command-usage">/unreg [código de serie]</div>
+                    </div>
+                    <div class="command-item" data-category="rpg">
+                        <div class="command-name">Perfil</div>
+                        <div class="command-description">Obtén toda la información de tu perfil mediante este comando.</div>
+                        <div class="command-usage">/perfil</div>
+                    </div>
+                    <div class="command-item" data-category="rpg">
+                        <div class="command-name">Balance</div>
+                        <div class="command-description">Obtén información de tu progreso y economía.</div>
+                        <div class="command-usage">/bal</div>
+                    </div>
+                    <div class="command-item" data-category="rpg">
+                        <div class="command-name">Recompensa diaria</div>
+                        <div class="command-description">Obtén una recompensa diaria mediante este comando.</div>
+                        <div class="command-usage">/daily</div>
+                    </div>
+                    <div class="command-item" data-category="rpg">
+                        <div class="command-name">Minar</div>
+                        <div class="command-description">Mina ⛏️  para obtener recompensas, recuerda que al minar tendrás un cooldown de 3 minutos para volver a minar.</div>
+                        <div class="command-usage">/minar</div>
+                    </div>
+                    <div class="command-item" data-category="rpg">
+                        <div class="command-name">Trabajar</div>
+                        <div class="command-description">Trabaja para obtener recompensas.</div>
+                        <div class="command-usage">/work</div>
+                    </div>
+                    <div class="command-item" data-category="rpg">
+                        <div class="command-name">Sube de nivel</div>
+                        <div class="command-description">Después de obtener Exp sube de nivel para alcanzar un nuevo rango.</div>
+                        <div class="command-usage">/levelup [all or número (la cantidad de niveles que quieres subir)]</div>
+                    </div>
+                    <div class="command-item" data-category="rpg">
+                        <div class="command-name">Comprar recursos</div>
+                        <div class="command-description">Compra recusos, diamantes, coins, yenes.</div>
+                        <div class="command-usage">/shop [coin all or numero 1-?]</div>
+                    </div>
+                    <div class="command-item" data-category="rpg">
+                        <div class="command-name">Ranking</div>
+                        <div class="command-description">Mira el puesto en el que te encuentras en el ranking global.</div>
+                        <div class="command-usage">/top</div>
+                    </div>
+                    <div class="command-item" data-category="rpg">
+                        <div class="command-name">Ver toda la información de usuarios (owner)</div>
+                        <div class="command-description">Este comando solo puede ser usado por moderadores, obtén toda la información de los usuarios en una lista.</div>
+                        <div class="command-usage">/verdatos</div>
+                    </div>
+                    
+                    <div class="command-item" data-category="game">
+                        <div class="command-name">Slot</div>
+                        <div class="command-description">Un mini-juego del popular juego "tragamonedas" pero con frutas :>, Exp necesarias para jugar; 300Exp pero si pierdes se restarán -500Exp de tu inventario.</div>
+                        <div class="command-usage">/slot</div>
+                    </div>
+                     <div class="command-item" data-category="game">
+                        <div class="command-name">Piedra Papel o Tijera</div>
+                        <div class="command-description">El popular juega de Piedra Papel o tijera, adaptado a HorekuOs, ten en cuenta que si pierdes se te restarán -150 Exp de tu inventario pero, si es un empate no se reducirá tu Exp.</div>
+                        <div class="command-usage">/ppt</div>
+                    </div>
+                     <div class="command-item" data-category="game">
+                        <div class="command-name">Tic Tac Toe</div>
+                        <div class="command-description">El popular juego conocido de distintas formas, michi, bueno, este juego lo jugaras entre dos personas, invita a alguien para que se una a la diversión :>, ten en cuenta que si ganas obtendrás grandes recompensas las cuales se añadirán a tu inventario.</div>
+                        <div class="command-usage">/ttt create [nombre de la sala]</div>
+                        <div class="command-usage">/ttt invite (Para unirse) [nombre de la sala]</div>
+                    </div>
+                     <div class="command-item" data-category="game">
+                        <div class="command-name">Rol Waifu</div>
+                        <div class="command-description">Suma personajes femeninos a tu harem, ten en cuenta que al usar se te pondrá cooldown de 30 minutos para volver a usarlo.</div>
+                        <div class="command-usage">/rw [quoted message]</div>
+                    </div>
+                     <div class="command-item" data-category="game">
+                        <div class="command-name">Claim</div>
+                        <div class="command-description">Después de usar el "rw", para reclamar es fácil con solo usar:</div>
+                        <div class="command-usage">/c [quoted message Waifu]</div>
+                    </div>
+                     <div class="command-item" data-category="game">
+                        <div class="command-name">Waifu inventario</div>
+                        <div class="command-description">Mira cuántas Waifus tienes en tu inventario.</div>
+                        <div class="command-usage">/ginfo</div>
+                    </div>
+                     <div class="command-item" data-category="game">
+                        <div class="command-name">Top waifus</div>
+                        <div class="command-description">Calcula el valor de las waifus con mas valor en una lista ordenada.</div>
+                        <div class="command-usage">/topw</div>
+                    </div>
+                    
+                    <div class="command-item" data-category="fun">
+                        <div class="command-name">Follar</div>
+                        <div class="command-description">Diviertete "Follando" a los usuarios de grupo, ten en cuenta de que si el owner esta en el grupo e intentás "follarlo", no podrás XD.</div>
+                        <div class="command-usage">/follar @user</div>
+                    </div>
+                    <div class="command-item" data-category="fun">
+                        <div class="command-name">Test Gay</div>
+                        <div class="command-description">Calcula el nivel de homosexualidad de tu amigo o integrante del grupo.</div>
+                        <div class="command-usage">/gay @user</div>
+                    </div>
+                     <div class="command-item" data-category="fun">
+                        <div class="command-name">Test Lesbiana</div>
+                        <div class="command-description">Calcula el nivel de lesbianismo de tu amigo o integrante del grupo.</div>
+                        <div class="command-usage">/lesbiana @user</div>
+                    </div>
+                    
+                     <div class="command-item" data-category="anime">
+                        <div class="command-name">Anime sub español y español latino</div>
+                        <div class="command-description">Aburrido y sin conexión a internet mas que solo para poder usar WhatsApp? usa este comando para poder ver animes completos ya sean en sub español o español latino, ten en cuenta que el catálogo es limitado.</div>
+                        <div class="command-usage">/animes</div>
+                    </div>
+                     <div class="command-item" data-category="anime">
+                        <div class="command-name">Hentai sub español</div>
+                        <div class="command-description">Mira hentai en sub español, ten en cuenta que algunos de los hentais añadidos no cuentan con sub español.</div>
+                        <div class="command-usage">/hentai</div>
+                    </div>
+                     <div class="command-item" data-category="anime">
+                        <div class="command-name">Edits anime</div>
+                        <div class="command-description">Mira Edits anime, relajantes, movidos o tristes.</div>
+                        <div class="command-usage">/edit anime</div>
+                        <div class="command-usage">/edit phonk</div>
+                        <div class="command-usage">/edit retro</div>
+                    </div>
+                    <div class="command-item" data-category="game">
+                        <div class="command-name">Comparte perfil con tu novi@</div>
+                        <div class="command-description">Tienes novia? y quieres compartir perfil con ella(el), no busques mas, este comando te enviará bonitas imágenes anime para que puedas compartir perfil con tu novi@ :'3.</div>
+                        <div class="command-usage">/couple</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="fade-in-up">
+        <div class="container">
+            <div class="section-header">
+                <h2>Preguntas Frecuentes</h2>
+                <p class="section-subtitle">Respuestas a las preguntas más comunes sobre HorekuOs</p>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">¿Cómo puedo añadir HorekuOs a mi grupo?</div>
+                    <div class="faq-answer">
+                        Para añadir HorekuOs a tu grupo, descarga el script de HorekuOs y alojalo en algún host o simplemente añade el número oficial del bot a tu grupo.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">¿Es HorekuOs gratuito?</div>
+                    <div class="faq-answer">
+                        Sí, HorekuOs es completamente gratuito. Sin embargo, algunos de nuestros códigos estan ofuscasdos, ya sea por los api keys de las APIS u otro motivo.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">¿Cuáles son los requisitos para usar HorekuOs?</div>
+                    <div class="faq-answer">
+                        HorekuOs requiere que tu servidor nodeJS que tenga los recursos básicos, y después simplemente ejecutar el código y poner tu número para obtener el código de vinculación.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">¿Puedo personalizar el prefijo de los comandos?</div>
+                    <div class="faq-answer">
+                        Sí, puedes cambiar el prefijo predeterminado aunque actualmente es multiprefiiopor pero puedes cambiarlo desde "./settings.json".
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">¿Cómo reporto un error o sugerir una nueva característica?</div>
+                    <div class="faq-answer">
+                        Puedes reportar errores o sugerir nuevas características a través de nuestro servidor de soporte en WhatsApp o por nuestro correo electrónico: syllscodelab@gmail.co
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="roadmap" class="fade-in-up">
+        <div class="container">
+            <div class="section-header">
+                <h2>Hoja de Ruta</h2>
+                <p class="section-subtitle">Nuestros planes para el futuro de HorekuOs</p>
+            </div>
+            <div class="roadmap-container">
+                <div class="roadmap-line"></div>
+                <div class="roadmap-item">
+                    <div class="roadmap-marker"></div>
+                    <div class="roadmap-date">Mayo 2025</div>
+                    <div class="roadmap-item-content">
+                        <h3 class="roadmap-title">Integración con IA avanzada</h3>
+                        <p>Aunque actualmente ya tenemos incorporardo la inteligencia artificial de Meta AI: Llama AI, queremos mejorar el comportamiento de este en grupos.</p>
+                    </div>
+                </div>
+                <div class="roadmap-item">
+                    <div class="roadmap-marker"></div>
+                    <div class="roadmap-date">Julio 2025</div>
+                    <div class="roadmap-item-content">
+                        <h3 class="roadmap-title">Estructura adaptado</h3>
+                        <p>La estructura de HorekuOs no es para personas que a penas van iniciando en esto, pará facilitar el entendimiento de la estructura de HorekuOs tenemos planeado hacerlo mas simple y añadir secciones que expliquen para que expliquen la función de cada línea importante de código.</p>
+                    </div>
+                </div>
+                <div class="roadmap-item">
+                    <div class="roadmap-marker"></div>
+                    <div class="roadmap-date">Septiembre 2025</div>
+                    <div class="roadmap-item-content">
+                        <h3 class="roadmap-title">Dashboard web completo</h3>
+                        <p>Lanzamiento de un panel de control web con todas las opciones de configuración y estadísticas detalladas.</p>
+                    </div>
+                </div>
+                <div class="roadmap-item">
+                    <div class="roadmap-marker"></div>
+                    <div class="roadmap-date">Diciembre 2025</div>
+                    <div class="roadmap-item-content">
+                        <h3 class="roadmap-title">HorekuOs v4.0</h3>
+                        <p>Gran actualización con rediseño completo, nuevas funcionalidades y mejoras significativas de rendimiento justo para la época navideña.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="fade-in-up">
+        <div class="container">
+            <div class="section-header">
+                <h2>Testimonios</h2>
+                <p class="section-subtitle">Lo que dicen nuestros usuarios</p>
+            </div>
+            <div class="testimonials-container">
+                <div class="testimonial-card">
+                    <p class="testimonial-content">HorekuOs ha transformado completamente la gestión de mis grupos. La moderación automática y los mini-juegos mantienen a la comunidad activa y segura.</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">JD</div>
+                        <div class="author-info">
+                            <h4>Juan Diego</h4>
+                            <p>dministrador de grupo</p>
+                            <div class="stars">★★★★★</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-content">Los comandos de descarga son increíblemente veloces y la calidad de descarga es excepcional. Ya no necesitamos otros bots en nuestro grupo.</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">MC</div>
+                        <div class="author-info">
+                            <h4>María Castillo</h4>
+                            <p>Administrador de comunidad</p>
+                            <div class="stars">★★★★★</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-content">El soporte al cliente es excepcional. Cualquier problema que he tenido ha sido resuelto rápidamente por el equipo.</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">LR</div>
+                        <div class="author-info">
+                            <h4>Luis Rodríguez</h4>
+                            <p>Propietario de una comunidad de anime</p>
+                            <div class="stars">★★★★☆</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+  <script src="./assets/js/script.js"></script>
+</body>
+</html>
