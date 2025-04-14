@@ -316,17 +316,6 @@
              object-fit: contain;
              filter: brightness(0);
        }
-        
-        @media (prefers-color-scheme: dark) {
-           .feature-icon .custom-icon
-           .search-icon img {
-           filter: brightness(0) invert(1);
-          }
-        }
-        
-        body.dark-mode .feature-icon .custom-icon {
-            filter: brightness(0) invert(1);
-        }
 
         .feature-title {
             font-size: 1.3rem;
