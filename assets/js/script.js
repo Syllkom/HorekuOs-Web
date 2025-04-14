@@ -116,6 +116,16 @@ function enableDarkMode() {
     root.style.setProperty('--text', '#ffffff');
     root.style.setProperty('--text-secondary', '#b0b0b0');
     themeToggle.textContent = '☀️';
+    
+    const icons = document.querySelectorAll('.feature-icon img');
+    icons.forEach(icon => {
+        if (icon.alt) {
+            const iconName = icon.alt;
+            icon.src = `./assets/light-dark/${iconName}_light.png`;
+        }
+    });
+    
+    root.setAttribute('data-theme', 'dark');
 }
 
 function enableLightMode() {
@@ -126,6 +136,16 @@ function enableLightMode() {
     root.style.setProperty('--text', '#212121');
     root.style.setProperty('--text-secondary', '#757575');
     themeToggle.textContent = '🌙';
+    
+    const icons = document.querySelectorAll('.feature-icon img');
+    icons.forEach(icon => {
+        if (icon.alt) {
+            const iconName = icon.alt;
+            icon.src = `./assets/light-dark/${iconName}_dark.png`;
+        }
+    });
+    
+    root.setAttribute('data-theme', 'light');
 }
 
 function animateCounter(element, target) {
