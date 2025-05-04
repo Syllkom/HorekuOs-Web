@@ -171,7 +171,7 @@ Este proyecto está bajo la Licencia MIT. Consulta el archivo `LICENSE` para má
 
 <div align="center">
   
-  ### 💖 Desarrollado por [Syllkom](https://github.com/Syllkom)
+  ### Desarrollado por [Syllkom](https://github.com/Syllkom)
   
   [![GitHub](https://img.shields.io/badge/GitHub-Syllkom-181717?style=for-the-badge&logo=github)](https://github.com/Syllkom)
   
