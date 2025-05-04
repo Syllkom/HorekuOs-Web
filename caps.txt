@@ -1,0 +1,158 @@
+HorekuOs - Indice - Capitulos
+
+# Style Css
+1. CONFIGURACIÓN GENERAL:
+   1.1 Fuentes personalizadas
+   1.2 Variables y propiedades:
+       - Colores
+       - Tamaños de fuente
+       - Pesos de fuente
+       - Fuentes
+       - Espaciado
+       - Bordes
+   1.3 Reset y estilos base
+
+2. ESTRUCTURA PRINCIPAL
+   2.1 Reset y estilos base
+   2.2 Contenedor y fondo
+
+3. NAVEGACIÓN:
+   3.1 Menú Toggle
+   3.2 Menú lateral:
+       - Backdrop para el menú
+   3.3 Navegación inferior
+
+4. COMPONENTES:
+   4.1 Header
+   4.2 Botones:
+       - Botón Get Started
+   4.3 Tarjetas
+   4.4 Formularios
+   4.5 Información de usuario
+
+5. VISTAS ESPECÍFICAS:
+   5.1 Vista general
+   5.2 Vista documentación
+   5.3 Vista creadores
+   5.4 Vista comandos
+   5.5 Vista descargas
+   5.6 Vista cuenta
+   5.7 AJUSTES
+   5.8 Tamaño de texto
+   5.9 Estilos para opciones de toggle:
+       - Botón de guardar cambios
+
+6. REDES SOCIALES Y TÉRMINOS:
+   6.1 Iconos de redes sociales en el menú
+   6.2 Vista términos y políticas
+   6.3 Soporte
+   6.4 Estilos para comunidad
+
+7. CUENTA (View):
+   7.1 Vistas generales
+
+8. UTILIDADES:
+   8.1 Clases de utilidad
+   8.2 Media Queries para ordenadores:
+       - Área de contenido
+       - Navegación inferior
+       - Ajustes para vistas específicas
+
+9. ANIMACIONES:
+   9.1 Animaciones avanzadas:
+       - Entrada/aparición
+       - Entrada lateral
+       - Ondulación
+       - Pulsación Mejorada
+       - Flotación
+       - Giratoria
+       - Efecto de brillo
+       - Destacar
+       - Efecto De Ondas
+       - Cambio De Color
+       - Carga
+       - Progreso Para Barras
+       - Rebote
+       - Shake Para Errores O Alertas
+   9.2 Animaciones a elementos específicos:
+       - Botones
+       - Efecto ripple para botones
+       - Botón de download
+       - Opciones De Cuenta
+       - Iconos
+       - Interruptores (toggle)
+       - Elementos de avatar
+       - Menú lateral
+       - Menú toggle
+       - Navegación inferior
+       - Elementos de apoyo
+       - Botón Get Started
+       - Search bar
+       - Opciones de tema
+       - Elementos que aparecen
+       - Comandos
+       - Notificaciones y estados
+       - Skeleton loading
+       - Notificaciones toast
+       - Loading spinners
+       - Cambio de vista
+       - Clases de utilidad para animaciones
+       - Logo (animación flotante)
+       - Secciones de términos
+       - Clases utilitarias para márgenes y espaciados
+       - Ondas de fondo
+       - Olas de fondo
+       - Cursor personalizado
+       - Formularios
+       - Microinteracciones para inputs
+
+# Main Js
+10. UTILIDADES Y FUNCIONES AUXILIARES
+
+11. GESTIÓN DE VISTAS
+
+12. AUTENTICACIÓN DE USUARIOS
+
+13. GESTIÓN DE PERFIL DE USUARIO:
+    13.1 Descarga la versión específica de HorekuOs
+    13.2 Alterna la visibilidad de los campos de contraseña
+
+14. INICIALIZACIÓN DE LA APLICACIÓN:
+    14.1 CONFIGURACIÓN DE EVENT LISTENERS
+
+# Account Js
+15. FUNCIONES PARA VISTAS DE CUENTA:
+    15.1 Muestra la vista de edición de perfil
+    15.2 Muestra la vista de cambio de contraseña
+    15.3 Guarda la nueva foto de perfil
+    15.4 Guarda los cambios del perfil
+    15.5 Guarda la nueva contraseña
+
+16. EVENT LISTENERS PARA VISTAS DE CUENTA
+
+# Search Js
+17. MODULO - SEARCH
+18. MODULO - NAVEGACIÓN 
+
+# Theme Css
+19. TEMAS Y EFECTOS DE TEMPORADA
+    19.1 Variables para temas
+    19.2 Temas de colores
+    19.3 Temas de temporada
+    19.4 Efectos de temporada:
+         - Efecto de otoño - hojas cayendo
+         - Efecto de invierno - nieve cayendo
+         - Efecto de primavera - flores y elementos naturales
+         - Efecto de verano - sol brillante
+    19.5 AJUSTE DE TAMAÑO DE TEXTO:
+         - Ajustes responsivos para tamaños de texto
+    19.6 Toast para notificaciones
+    
+# Settings Js
+20. CONFIGURACIÓN TEMAS Y TEMPORADAS
+    20.1 Configuración
+    20.2 CONFIGURACIÓN DE TEMPORADAS
+
+
+    
+© 2025 Syllkom. All rights reserved.
