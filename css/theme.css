@@ -1,0 +1,429 @@
+/**
+ * © 2025 Syllkom. All rights reserved.
+ */
+
+/*-------------------===-------------------*\
+      [19]. TEMAS Y EFECTOS DE TEMPORADA
+\*-------------------===-------------------*/
+
+
+
+/**
+ * [19.1] Variables para temas
+ */
+:root {
+    --text-size-factor: 1;
+}
+
+
+
+/*----------------===----------------*\
+       [19.2] Temas de colores
+\*----------------===----------------*/
+
+/**
+ * Defauld 🟣
+ */
+.theme-default {
+    --primary-dark: #3621A0;
+    --primary-light: #7162E1;
+    --button-bg: #5451D6;
+    --button-bg-hover: #4540C0;
+    --text-light: #DBE9F6;
+    --text-dark: #9A9AD7;
+    --nav-active: #3BC3F8;
+    --card-border: #6865D6;
+    --card-bg: rgba(79, 70, 229, 0.3);
+}
+
+
+/**
+ * Red 🔴
+ */
+.theme-red-white {
+    --primary-dark: #B50000;
+    --primary-light: #FF5757;
+    --button-bg: #E53935;
+    --button-bg-hover: #C62828;
+    --text-light: #FFFFFF;
+    --text-dark: #FFCDD2;
+    --nav-active: #FF8A80;
+    --card-border: #EF5350;
+    --card-bg: rgba(229, 57, 53, 0.3);
+}
+
+
+/**
+ * Black 🖤
+ */
+.theme-black-white {
+    --primary-dark: #111111;
+    --primary-light: #444444;
+    --button-bg: #333333;
+    --button-bg-hover: #222222;
+    --text-light: #FFFFFF;
+    --text-dark: #BBBBBB;
+    --nav-active: #EEEEEE;
+    --card-border: #555555;
+    --card-bg: rgba(68, 68, 68, 0.3);
+}
+
+
+/**
+ * Dark ⚫
+ */
+.theme-dark-grey {
+    --primary-dark: #333333;
+    --primary-light: #888888;
+    --button-bg: #616161;
+    --button-bg-hover: #424242;
+    --text-light: #EEEEEE;
+    --text-dark: #BDBDBD;
+    --nav-active: #90A4AE;
+    --card-border: #757575;
+    --card-bg: rgba(97, 97, 97, 0.3);
+}
+
+
+/**
+ * Green 🟢
+ */
+.theme-white-green {
+    --primary-dark: #2E7D32;
+    --primary-light: #4CAF50;
+    --button-bg: #388E3C;
+    --button-bg-hover: #1B5E20;
+    --text-light: #FFFFFF;
+    --text-dark: #A5D6A7;
+    --nav-active: #66BB6A;
+    --card-border: #43A047;
+    --card-bg: rgba(56, 142, 60, 0.3);
+}
+
+
+/**
+ * Blue 🔵
+ */
+.theme-blue-black {
+    --primary-dark: #0D47A1;
+    --primary-light: #2196F3;
+    --button-bg: #1976D2;
+    --button-bg-hover: #0D47A1;
+    --text-light: #E3F2FD;
+    --text-dark: #90CAF9;
+    --nav-active: #42A5F5;
+    --card-border: #1E88E5;
+    --card-bg: rgba(25, 118, 210, 0.3);
+}
+
+
+
+/*----------------===----------------*\
+       [19.3] Temas de temporada
+\*----------------===----------------*/
+
+/**
+ * Autumn 🍂
+ */
+.theme-autumn {
+    --primary-dark: #5D4037;
+    --primary-light: #8D6E63;
+    --button-bg: #795548;
+    --button-bg-hover: #5D4037;
+    --text-light: #FFEBEE;
+    --text-dark: #FFCCBC;
+    --nav-active: #FF8A65;
+    --card-border: #A1887F;
+    --card-bg: rgba(121, 85, 72, 0.3);
+}
+
+
+/**
+ * Winter ☃️
+ */
+.theme-winter {
+    --primary-dark: #1A237E;
+    --primary-light: #3F51B5;
+    --button-bg: #3949AB;
+    --button-bg-hover: #283593;
+    --text-light: #E8EAF6;
+    --text-dark: #C5CAE9;
+    --nav-active: #7986CB;
+    --card-border: #5C6BC0;
+    --card-bg: rgba(63, 81, 181, 0.3);
+}
+
+
+/**
+ * Spring 🌱
+ */
+.theme-spring {
+    --primary-dark: #558B2F;
+    --primary-light: #8BC34A;
+    --button-bg: #7CB342;
+    --button-bg-hover: #558B2F;
+    --text-light: #F1F8E9;
+    --text-dark: #DCEDC8;
+    --nav-active: #AED581;
+    --card-border: #9CCC65;
+    --card-bg: rgba(139, 195, 74, 0.3);
+}
+
+
+/**
+ * Summer ⛱️
+ */
+.theme-summer {
+    --primary-dark: #EF6C00;
+    --primary-light: #FF9800;
+    --button-bg: #FB8C00;
+    --button-bg-hover: #EF6C00;
+    --text-light: #FFF3E0;
+    --text-dark: #FFE0B2;
+    --nav-active: #FFB74D;
+    --card-border: #FFA726;
+    --card-bg: rgba(255, 152, 0, 0.3);
+}
+
+
+
+/*----------------===----------------*\
+     [19.4] Efectos de temporada
+\*----------------===----------------*/
+
+/**
+ * Efecto de otoño - hojas cayendo
+ */
+.autumn-leaves {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 100;
+    overflow: hidden;
+}
+
+.leaf {
+    position: absolute;
+    top: -50px;
+    animation: falling linear infinite;
+    transform-style: preserve-3d;
+    transform-origin: center;
+}
+
+@keyframes falling {
+    0% {
+        transform: translateY(-50px) rotate(0deg) scale(0.7);
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh) rotate(360deg) scale(1);
+        opacity: 0;
+    }
+}
+
+
+/**
+ * Efecto de invierno - nieve cayendo
+ */
+.winter-snow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 100;
+    overflow: hidden;
+}
+
+.snowflake {
+    position: absolute;
+    top: -50px;
+    color: white;
+    animation: snowing linear infinite;
+    transform-style: preserve-3d;
+}
+
+@keyframes snowing {
+    0% {
+        transform: translateY(-50px) rotate(0deg);
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 0.8;
+    }
+    100% {
+        transform: translateY(100vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+
+/**
+ * Efecto de primavera - flores y elementos naturales
+ */
+.spring-flowers {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 100;
+    overflow: hidden;
+}
+
+.spring-element {
+    position: absolute;
+    animation: floating 30s ease-in-out infinite alternate;
+    opacity: 0.7;
+    font-size: 1.2rem;
+}
+
+@keyframes floating {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+    25% {
+        transform: translate(20px, 10px) rotate(5deg);
+    }
+    50% {
+        transform: translate(-15px, -15px) rotate(-5deg);
+    }
+    75% {
+        transform: translate(-20px, 15px) rotate(10deg);
+    }
+    100% {
+        transform: translate(15px, -10px) rotate(-10deg);
+    }
+}
+
+
+/**
+ * Efecto de verano - sol brillante
+ */
+.summer-sun {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 100;
+    overflow: hidden;
+}
+
+.summer-sun-element {
+    position: absolute;
+    top: -100px;
+    right: -100px;
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, #FFEB3B 0%, rgba(255, 235, 59, 0) 70%);
+    border-radius: 50%;
+    animation: pulsate 10s ease-in-out infinite;
+}
+
+.sun-ray {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 4px;
+    height: 120px;
+    background: linear-gradient(to bottom, rgba(255, 235, 59, 0.8), rgba(255, 235, 59, 0));
+    transform-origin: top center;
+    animation: flare 5s ease-in-out infinite;
+}
+
+@keyframes pulsate {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 0.7;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 0.9;
+    }
+}
+
+@keyframes flare {
+    0%, 100% {
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 0.8;
+    }
+}
+
+
+
+/*-------------------===-------------------*\
+      [19.5] AJUSTE DE TAMAÑO DE TEXTO
+\*-------------------===-------------------*/
+
+body {
+    font-size: calc(var(--fs-6) * var(--text-size-factor));
+}
+
+
+/**
+ * Ajustes responsivos para tamaños de texto
+ */
+@media (max-width: 768px) {
+    .theme-option {
+        width: calc(50% - var(--spacing-md));
+    }
+    
+    .text-size-sample {
+        font-size: var(--fs-3);
+    }
+}
+
+@media (max-width: 480px) {
+    .theme-option {
+        width: 100%;
+    }
+    
+    .text-size-controls {
+        flex-direction: column;
+        gap: var(--spacing-md);
+    }
+}
+
+
+
+/*----------------===----------------*\
+    [19.6] Toast para notificaciones
+\*----------------===----------------*/
+
+.toast {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--primary-light);
+    color: var(--text-light);
+    padding: var(--spacing-md);
+    border-radius: var(--border-radius-md);
+    font-size: var(--fs-6);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.toast.show {
+    opacity: 1;
+    visibility: visible;
+}
