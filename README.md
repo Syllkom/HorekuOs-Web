@@ -24,10 +24,10 @@
 
 ```bash
 # Clonar el repositorio
-git clone https://github.com/Syllkom/HorekuOs.git
+git clone https://github.com/Syllkom/HorekuOs-Web.git
 
 # Navegar al directorio
-cd HorekuOs
+cd HorekuOs-Web
 
 # Abrir con tu navegador web
 # Simplemente abre el archivo index.html en tu navegador
